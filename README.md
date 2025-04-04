@@ -26,11 +26,11 @@ Bluesky platformu için geliştirilmiş otomatik takip botu Chrome eklentisi. Bu
 
 1. Bu repoyu bilgisayarınıza indirin veya klonlayın
 2. Tarayıcınızın eklenti sayfasına gidin:
-   - **Chrome**: `chrome://extensions/`
-   - **Opera**: `opera://extensions/`
-   - **Brave**: `brave://extensions/`
-   - **Vivaldi**: `vivaldi://extensions/`
-   - **Yandex**: `browser://extensions/`
+   - **Chrome**: [chrome://extensions/](chrome://extensions/)
+   - **Opera**: [opera://extensions/](opera://extensions/)
+   - **Brave**: [brave://extensions/](brave://extensions/)
+   - **Vivaldi**: [vivaldi://extensions/](vivaldi://extensions/)
+   - **Yandex**: [browser://extensions/](browser://extensions/)
 3. Sağ üst köşedeki "Geliştirici modu" seçeneğini etkinleştirin
 4. "Paketlenmemiş öğe yükle" (veya benzer bir buton) tıklayın
 5. İndirdiğiniz klasörü seçin ve "Seç" butonuna tıklayın
@@ -39,14 +39,14 @@ Bluesky platformu için geliştirilmiş otomatik takip botu Chrome eklentisi. Bu
 ### Firefox Kurulumu
 
 1. Bu repoyu bilgisayarınıza indirin veya klonlayın
-2. Firefox tarayıcınızı açın ve `about:debugging#/runtime/this-firefox` adresine gidin
+2. Firefox tarayıcınızı açın ve [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox) adresine gidin
 3. "Geçici Eklenti Yükle" butonuna tıklayın
 4. İndirdiğiniz klasördeki `manifest.json` dosyasını seçin
 5. Eklenti geçici olarak yüklenecektir (Firefox'u kapattığınızda kaldırılır)
 
 ## Kullanım
 
-1. Bluesky platformuna giriş yapın (`https://bsky.app`)
+1. Bluesky platformuna giriş yapın [https://bsky.app](https://bsky.app)
 2. Takip etmek istediğiniz kullanıcıların bulunduğu bir sayfaya gidin (örn. bildirimler, keşfet sayfası)
 3. Chrome araç çubuğundan Bluesky Follow Bot ikonuna tıklayın
 4. Açılan pencereden istediğiniz ayarları yapın:
