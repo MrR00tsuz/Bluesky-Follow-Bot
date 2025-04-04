@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .form-row label {
+      flex: 1;
+    }
+    .form-row input {
+      width: 100px;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .checkbox-group input {
+      margin: 0;
+    }
+    button {
+      background-color: #0085ff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #0066cc;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    input, select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .select-input {
+      width: 100px;
+      background-color: white;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .running {
+      background-color: #e6f7ff;
+      color: #0085ff;
+    }
+    .stopped {
+      background-color: #f8f8f8;
+      color: #666;
+    }
+    .divider {
+      height: 1px;
+      background-color: #eee;
+      margin: 5px 0;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+    .footer a {
+      color: #0085ff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bluesky Follow Bot Ayarları</h2>
+    
+    <div class="form-group">
+      <div class="section-title">Zaman Ayarları</div>
+      <div class="form-row">
+        <label for="followDelay">Takip Aralığı (saniye):</label>
+        <input type="number" id="followDelay" min="1" max="30" value="5">
+      </div>
+      <div class="form-row">
+        <label for="refreshInterval">Yenileme Süresi (saniye):</label>
+        <input type="number" id="refreshInterval" min="30" value="120">
+      </div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="form-group">
+      <div class="section-title">Davranış Ayarları</div>
+      <div class="form-row">
+        <label for="followMode">Takip Modu:</label>
+        <select id="followMode" class="select-input">
+          <option value="followBack">Geri Takip Et</option>
+          <option value="follow">Takip Et</option>
+        </select>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="autoRefresh" checked>
+        <label for="autoRefresh">Otomatik Sayfa Yenileme</label>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="autoScroll" checked>
+        <label for="autoScroll">Otomatik Kaydırma</label>
+      </div>
+      <div class="form-row">
+        <label for="maxFollows">Maksimum Takip Sayısı:</label>
+        <input type="number" id="maxFollows" min="1" max="100" value="30">
+      </div>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="form-group">
+      <button id="startBot">Botu Başlat</button>
+      <button id="stopBot" disabled>Botu Durdur</button>
+    </div>
+    
+    <div id="status" class="stopped">Bot Durdu ⏹️</div>
+  </div>
+  
+  <div class="footer">
+    Geliştirici: <a href="https://bsky.app/profile/mrr00tsuz.bsky.social" target="_blank">mrr00tsuz.bsky.social</a>
+    <div>v1.1.0 &copy; 2025</div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
