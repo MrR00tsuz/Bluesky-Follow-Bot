@@ -36,13 +36,6 @@ Bluesky platformu için geliştirilmiş otomatik takip botu Chrome eklentisi. Bu
 5. İndirdiğiniz klasörü seçin ve "Seç" butonuna tıklayın
 6. Eklenti başarıyla yüklenecektir
 
-### Firefox Kurulumu
-
-1. Bu repoyu bilgisayarınıza indirin veya klonlayın
-2. Firefox tarayıcınızı açın ve [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox) adresine gidin
-3. "Geçici Eklenti Yükle" butonuna tıklayın
-4. İndirdiğiniz klasördeki `manifest.json` dosyasını seçin
-5. Eklenti geçici olarak yüklenecektir (Firefox'u kapattığınızda kaldırılır)
 
 ## Kullanım
 
