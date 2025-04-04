@@ -62,9 +62,6 @@ Bluesky platformu için geliştirilmiş otomatik takip botu Chrome eklentisi. Bu
 
 [@mrr00tsuz.bsky.social](https://bsky.app/profile/mrr00tsuz.bsky.social)
 
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
 
 ## Sürüm Geçmişi
 
